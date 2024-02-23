@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form method="post" action="login.php" id="login-form">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+
+            // Redirect to ntg.html after form submission
+            window.location.href = "ntg.html";
+
+            // Prevent the form from submitting through its normal process
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

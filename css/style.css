@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('image/loginImage.jpg'); /* Set your background image here */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Adds transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.textbox {
+    margin: 10px 0;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background: #f1f1f1; /* Gray background */
+    border-radius: 5px;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: gray;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: gray;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
